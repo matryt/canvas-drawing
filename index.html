@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>HTML : Canvas</title>
+        <meta charset="utf8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="palette">
+            <span onclick="modifierCouleur('#206BA4');" style="background:#206BA4"></span>
+            <span onclick="modifierCouleur('#54A4DE');" style="background:#54A4DE"></span>
+            <span onclick="modifierCouleur('#BBD9EE');" style="background:#BBD9EE"></span>
+            <span onclick="modifierCouleur('#BEDF5D');" style="background:#BEDF5D"></span>
+            <span onclick="modifierCouleur('#D6EB9A');" style="background:#D6EB9A"></span>
+            <span onclick="modifierCouleur('#FF9834');" style="background:#FF9834"></span>
+            <span onclick="modifierCouleur('#FFBF80');" style="background:#FFBF80"></span>
+            <span onclick="modifierCouleur('#F6E896');" style="background:#F6E896"></span>
+            <span onclick="modifierCouleur('#B07D42');" style="background:#B07D42"></span>
+            <span onclick="modifierCouleur('#FF5349');" style="background:#FF5349"></span>
+            <span onclick="modifierCouleur('#FFFFFF');" style="background:#FFFFFF"></span>
+        </div>
+        <canvas id="dessin" width="530" height="360"></canvas>
+        <div>
+            <a onclick="effacer()"><img src="img/supprimer.png" height=40px/></a>
+            <a onclick="changerEpaisseur(0.5)"><img src="img/t1.png" width=40px /></a>
+            <a onclick="changerEpaisseur(2)"><img src="img/t2.png" width=40px /></a>
+            <a onclick="changerEpaisseur(5)"><img src="img/t3.png" width=40px /></a>
+            <a onclick="changerEpaisseur(10)"><img src="img/t4.png" width=40px /></a>
+            <a onclick="changerEpaisseur(20)"><img src="img/t5.png" width=40px /></a>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
